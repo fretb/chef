@@ -36,7 +36,7 @@ class Chef
       LOG_CATEGORY_ID = 11001
 
       # Since we must install the event logger, this is not really configurable
-      SOURCE = Chef::Dist::SHORT.freeze
+      SOURCE = "#{Chef::Dist::PRODUCT}".freeze
 
       def self.available?
         ChefUtils.windows?
